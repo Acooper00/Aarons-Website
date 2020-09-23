@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>MY WEBSITE</title>
+		<link href=./.CSS/My_Website_Styles.css type=text/css rel=stylesheet>
+		<script type="text/javascript" src="./.JS/DofE.js"></script>
+	</head>
+	<body>
+		<div class="band turquoise layer_5" id="top-band">
+			<h1 id="Main-title" class="title blue centre">I'M AARON COOPER, WELCOME TO MY WEBSITE</h1>
+		</div>
+
+		<div class="static-box white" id="text-box-1" >
+			<div class="scroll-box white layer_4" id="title-text-box">
+				<h2 id="first-head" class="title centre">About Me</h2>
+			</div>
+
+			<div class="text-box" id="Sport">
+				<div class="scroll-box white layer_3" id="second-title-box">
+					<h4 id="second-head" class="title">Sport</h4>
+				</div>
+				<p>I enjoy many different sports, both casually with my familly and competitvely with a club. These include:</p>
+				<ul>
+					<li>Football</li>
+					<li>Waterpolo</li>
+					<li>Running (5km)</li>
+				</ul>
+			</div>
+
+			<div class="text-box" id="Hobbies">
+				<div class="scroll-box white layer_3" id="third-title-box">
+					<h4 id="third-head" class="title">Hobbies</h4>
+				</div>
+				<p>Along with my sporting hobbies, I also enjoy music and coding. I have been playing the violin since I was 9 years old and am currently trying to reach grade 4 level. In addition, I am currently taking music as a <a href="#GCSE"><strong>GCSE</strong></a> subject and am enjoying working on our set pieces. I like listening to music in my spare time, and some of my favourite songs are <em>"R U Mine"</em> by Arctic Monkeys, <em>"Wonderwall"</em> by Oasis and <em>"Holiday"</em> by Green Day. You can listen to them here.<br><br></p>
+				<p><em>"R U Mine"</em> by Arctic Monkeys</p>
+				<audio controls>
+					<source src="./.MEDIA/AUDIO/R_U_Mine.mp3" type="audio/mpeg">
+Your browser does not support this audio.
+				</audio>
+				<p><em>"Wonderwall"</em> by Oasis</p>
+				<audio controls>
+					<source src="./.MEDIA/AUDIO/Wonderwall.mp3" type="audio/mpeg">
+Your browser does not support this audio.
+				</audio>
+				<p><em>"Holiday"</em> by Green Day</p>
+				<audio controls>
+					<source src="./.MEDIA/AUDIO/Holiday.mp3" type="audio/mpeg">
+Your browser does not support this audio.
+				</audio>
+				<p><br>I also like to code, and I have coded scripts such as this webpage in html and css and a script for revision notes in python. In addition, I have created a script to run a robot powered by a Raspberry Pi, which we were making in a club at school. You can see it in action, along with the code, here.<br><br></p>
+				<video id="Video-1" src="./.MEDIA/VIDEO/PiWars_Robot.mp4" width="320px" height="240px" controls>
+Your browser does not support this video.
+				</video>
+				<!-- Code to show python code here -->
+				<p><br>I am also participating in the Duke Of Edinburgh Bronze Award. I have just completed my assessed expedition in the Mendips, and before that my practice expedition in the Malvern Hills. Here you can see some of the pictures that I took.</p>
+				<div class="picture-box grey layer_1" id="picture-box-1">
+					<div class="button light-grey" id="button-1" onclick="leftimg()">
+						<h1 class="no-margin no-line centre unselectable">&lt</h1>
+					</div>
+					<img src="./.MEDIA/IMAGE/1.jpg" alt="A Picture Of My DofE Expedition" id="DofE-img"/>
+					<div class="button dark-grey" id="button-2" onclick="rightimg()">
+						<h1 class="no-margin no-line centre unselectable">&gt</h1>
+					</div>
+					<input id="input-1" class="picture-input" type="text" onchange="inputchange()">
+					<div class="picture-total">
+						<p id="picture-total-1" class="picture-total"></p>
+					</div>
+					<script type="text/javascript">
+						setimg()
+
+						function getBaseLog(x, y) {
+							return Math.log(y) / Math.log(x);
+						}
+						document.getElementById("input-1").value="1"
+						document.getElementById("input-1").maxlength=Math.floor(getBaseLog(10,max),1)
+						document.getElementById("input-1").size=Math.floor(getBaseLog(10,max),1)
+						document.getElementById("picture-total-1").innerHTML="/ "+max.toString()
+					</script>
+				</div>
+			</div>
+
+			<div class="text-box" id="GCSE">
+				<div class="scroll-box white layer_3" id="fourth-title-box">
+					<h4 id="fourth-head" class="title">GCSE</h4>
+				</div>
+				<p>I am currently studying for my GCSEs, having recently taken my Year 11 November mocks. These are the subjects I am studying:</p>
+				<ul>
+					<li>Maths</li>
+					<li>English Language</li>
+					<li>English Literature</li>
+					<li>Biology</li>
+					<li>Chemistry</li>
+					<li>Physics</li>
+					<li>French</li>
+					<li>Geography</li>
+					<li>Computer Science</li>
+					<li>Music</li>
+				</ul>
+				<p>I am hoping to achieve a level 7 in every subject (the equivalent of an A), and a higher level such as an 8 or 9 in some subjects.</p>
+				<!-- Add a table showing current grade and mark for each subject -->
+			</div>
+		</div>
+	</body>
+</html>
